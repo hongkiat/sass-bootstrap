@@ -1,0 +1,65 @@
+@import "bootstrap.scss";
+
+// .wrapper {
+// 	@extend .container;
+// 	width: $container-md;
+// }
+// .column {
+// 	@include make-md-column(4, $grid-gutter-width);
+// 	&.left-column {
+// 		background-color: $brand-primary;
+// 	}
+// 	&.middle-column {
+// 		background-color: $brand-success;
+// 	}
+// 	&.right-column {
+// 		background-color: $brand-warning;
+// 	}
+// }
+
+.main-area {
+	@extend .row;
+}
+.column {
+	background-color: $gray-lighter;
+	color: #fff;
+	margin-top: $grid-gutter-width;
+	padding-top: $grid-gutter-width;
+	padding-bottom: $grid-gutter-width;
+	text-align: center;
+	@extend .col-sm-4;
+}
+.content {
+	background-color: $brand-primary;
+	// @extend .col-xs-6;
+	@extend .col-xs-6;
+}
+.sidebar {
+	background-color: $brand-success;
+	@extend .col-xs-4;
+	// @extend .col-sm-4;
+}
+.side-nav {
+	background-color: $brand-warning;
+	// @extend .col-sm-2;
+	@extend .col-xs-2;
+}
+
+// .main-area {
+// 	@include make-row;
+// }
+// .content {
+// 	@include make-xs-column(6);
+// 	@include make-sm-column(6);
+// }
+// .sidebar {
+// 	@include make-xs-column(4);
+// 	@include make-sm-column(4);
+// }
+// .side-nav {
+// 	@include make-xs-column(2);
+// 	@include make-sm-column(2);
+// }
+// .column {
+// 	@include make-md-column(4);
+// }
